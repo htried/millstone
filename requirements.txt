@@ -1,0 +1,12 @@
+requests
+beautifulsoup4
+python-dotenv
+google-generativeai
+google-cloud-storage
+fsspec
+gcsfs
+pandas
+ipykernel
+black
+isort
+flake8
