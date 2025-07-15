@@ -51,10 +51,9 @@ def main(args):
         if not question:
             continue
         paraphrases = generate_paraphrases(question)
-        # Write paraphrases as a list of strings to the same JSON file
-        data["paraphrases"] = (
-            paraphrases if isinstance(paraphrases, list) else [paraphrases]
-        )
+        if not isinstance(paraphrases, list):
+            paraphrases = [paraphrases]
+        data["paraphrases"] = paraphrases
         with open(json_path, "w") as f:
             json.dump(data, f, indent=2)
 
