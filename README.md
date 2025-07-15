@@ -99,6 +99,14 @@ python scripts/04_batch_predictions.py --model <model_name> [--sample]
 # Optional: --sample indicates that predictions should come from gcs://<BUCKET>/prompt_sample.jsonl
 ```
 
+### 5. Parsing and Interpreting the Data
+
+Raw prediction jsonl files are in `predictions/` (Claude Opus 4 had some resource exhausted errors so we had to do it in two runs of roughly ~50k queries per run).
+
+QA-ing the data is done in **`notebooks/process_raw_data.ipynb`**, where LLM responses, evidence cases, and question framings are parsed in order to get stance counts in `{pro, con, other}`.
+
+Finally, we workshop and generate visualizations in **`notebooks/visualize.ipynb`**.
+
 ---
 
 ## Data Format
