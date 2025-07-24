@@ -3,6 +3,7 @@ prompts/prompts_claude-opus-4.jsonl filter=lfs diff=lfs merge=lfs -text
 prompts/prompts_gemini-2.0-flash.jsonl filter=lfs diff=lfs merge=lfs -text
 prompts/prompts_llama-3.1-405b.jsonl filter=lfs diff=lfs merge=lfs -text
 prompts/prompts_llama-3.1-8b.jsonl filter=lfs diff=lfs merge=lfs -text
+prompts/*.jsonl filter=lfs diff=lfs merge=lfs -text
 predictions/predictions_claude-3.5-haiku.jsonl filter=lfs diff=lfs merge=lfs -text
 predictions/predictions_llama-3.1-405b_1.jsonl filter=lfs diff=lfs merge=lfs -text
 predictions/predictions_llama-3.1-8b_1.jsonl filter=lfs diff=lfs merge=lfs -text
@@ -13,4 +14,7 @@ predictions/predictions_claude-opus-4_0.jsonl filter=lfs diff=lfs merge=lfs -tex
 predictions/predictions_claude-opus-4_1.jsonl filter=lfs diff=lfs merge=lfs -text
 predictions/predictions_gemini-2.0-flash.jsonl filter=lfs diff=lfs merge=lfs -text
 predictions/predictions_llama-3.1-405b_0.jsonl filter=lfs diff=lfs merge=lfs -text
+predictions/*.jsonl filter=lfs diff=lfs merge=lfs -text
+predictions_new/*.jsonl filter=lfs diff=lfs merge=lfs -text
+
 *.jsonl filter=lfs diff=lfs merge=lfs -text
