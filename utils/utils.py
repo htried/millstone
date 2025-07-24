@@ -1,10 +1,12 @@
 import os
+import random
 
 REPO_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-OUTPUT_DIR = os.path.join(REPO_DIR, 'data')
-DATA_DIR = OUTPUT_DIR
+# OUTPUT_DIR = os.path.join(REPO_DIR, 'data')
+# DATA_DIR = OUTPUT_DIR
+DATA_DIR = os.path.join(REPO_DIR, 'data_new')
 PROMPTS_DIR = os.path.join(REPO_DIR, 'prompts')
-PREDICTIONS_DIR = os.path.join(REPO_DIR, 'predictions')
+PREDICTIONS_DIR = os.path.join(REPO_DIR, 'predictions_new')
 PROCON_LINKS_FILE = os.path.join(REPO_DIR, 'utils', 'procon-links.txt')
 
 model_arg_map = {
@@ -13,6 +15,10 @@ model_arg_map = {
     "claude-opus-4": "publishers/anthropic/models/claude-opus-4",
     "llama-3.1-8b": "publishers/meta/models/llama-3.1-8b-instruct-maas",
     "llama-3.1-405b": "publishers/meta/models/llama-3.1-405b-instruct-maas",
+    "gpt-4o-mini": "gpt-4o-mini",
+    "gpt-4o": "gpt-4o",
+    "grok-3": "grok-3",
+    "grok-3-mini": "grok-3-mini",
 }
 
 model_api_spec_map = {
@@ -21,6 +27,10 @@ model_api_spec_map = {
     "publishers/anthropic/models/claude-opus-4": "anthropic",
     "publishers/meta/models/llama-3.1-8b-instruct-maas": "openai",
     "publishers/meta/models/llama-3.1-405b-instruct-maas": "openai",
+    "gpt-4o-mini": "openai",
+    "gpt-4o": "openai",
+    "grok-3": "x",
+    "grok-3-mini": "x",
 }
 
 model_location_map = {
@@ -29,6 +39,42 @@ model_location_map = {
     "claude-opus-4": "us-east5",
     "llama-3.1-8b": "us-central1",
     "llama-3.1-405b": "us-central1",
+    "gpt-4o-mini": "", #n/a
+    "gpt-4o": "", #n/a
+    "grok-3": "", #n/a
+    "grok-3-mini": "", #n/a
+}
+
+most_disagreed_upon_issues = [
+    'us-penny.json',
+    'standardized-tests.json',
+    'school-uniforms.json',
+    'olympics.json',
+    'binge-watching.json',
+    'saturday-halloween.json',
+    'ronald-reagan.json',
+    'teacher-tenure.json',
+    'fighting-in-hockey.json',
+    'drones.json'
+]
+
+cost_map = {
+    'gpt-4o-mini': {
+        'input': 0.075,
+        'output': 0.30,
+    },
+    'gpt-4o': {
+        'input': 1.25,
+        'output': 5.00,
+    },
+    'grok-3': {
+        'input': 3.00,
+        'output': 15.00,
+    },
+    'grok-3-mini': {
+        'input': 0.30,
+        'output': 0.50,
+    },
 }
 
 # Utility to create a slug from the URL

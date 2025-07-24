@@ -33,13 +33,13 @@ uv add -r requirements.txt
 uv sync
 ```
 
-Set up your `.env` file with your Google Cloud `PROJECT_ID` and `GEMINI_API_KEY`.
+Set up your `.env` file with your Google Cloud `PROJECT_ID`, `GEMINI_API_KEY`, `OPENAI_API_KEY`, and `XAI_API_KEY`.
 
 Examples of generated datasets for the tested models are included in this git repo (meaning you could just upload them to whichever batch prediction service you like/run script number 4) in the `/prompts` directory; or you can regenerate the entire data pipeline by following the steps below.
 
 ### 1. Scraping ProCon.org
 
-**`scripts/01_scrape_procon.py`**
+**`scripts/a_scrape_procon.py`**
 
 - Scrapes debate topics from ProCon.org using URLs in `utils/procon-links.txt`.
 - Extracts the main question, pro/con arguments, quotes, and footnoted sources.
@@ -47,7 +47,7 @@ Examples of generated datasets for the tested models are included in this git re
 
 **Usage:**
 ```bash
-python scripts/01_scrape_procon.py
+uv run scripts/a_scrape_procon.py
 # Optional: --sample to scrape only 5 topics for testing
 ```
 
@@ -55,14 +55,14 @@ python scripts/01_scrape_procon.py
 
 ### 2. Generating Paraphrases
 
-**`scripts/02_generate_paraphrases.py`**
+**`scripts/b_generate_paraphrases.py`**
 
 - Uses Google Gemini to generate multiple neutral paraphrases of each debate question.
 - Adds paraphrases to each topic's JSON file in `data/`.
 
 **Usage:**
 ```bash
-python scripts/02_generate_paraphrases.py
+uv run scripts/b_generate_paraphrases.py
 # Optional: --sample to paraphrase only 5 topics
 ```
 
@@ -70,7 +70,7 @@ python scripts/02_generate_paraphrases.py
 
 ### 3. Generating Prompts
 
-**`scripts/03_generate_dataset.py`**
+**`scripts/c_generate_dataset.py`**
 
 - Creates prompts for LLMs using the paraphrased questions.
 - Prompts vary in evidence provided (pro, con, both, 75/25 splits, or none) and in framing.
@@ -79,24 +79,41 @@ python scripts/02_generate_paraphrases.py
 
 **Usage:**
 ```bash
-python scripts/03_generate_dataset.py --model <model_name> --N <num_trials> [--save_local] [--sample]
-# model_name: gemini-2.0-flash, claude-3.5-haiku, claude-opus-4, llama-3.1-8b, llama-3.1-405b
-# Optional: --save_local saves the jsonl file locally (omitting saves to GCS), --sample generates prompts for only 5 topics
+uv run scripts/c_generate_dataset.py --model <model_name> --N <num_trials> [--save_local] [--sample] [--gpt_grok]
+# model_name: gemini-2.0-flash, claude-3.5-haiku, claude-opus-4, llama-3.1-8b, llama-3.1-405b, gpt-4o, gpt-4o-mini, grok-3, grok-3-mini
+# Optional:
+# --save_local saves the jsonl file locally (omitting saves to GCS)
+# --sample generates prompts for only 5 topics
+# --gpt_grok pulls out only the top 10 most divisive topics and formulates a dataset for one of the GPT or Grok models accordingly
 ```
 
 ---
 
 ### 4. Batch Model Predictions
 
-**`scripts/04_batch_predictions.py`**
+**`scripts/d_batch_predictions.py`**
 
 - Submits generated prompts to the selected LLM in batch mode (using Google Vertex AI, etc.).
 - Monitors job status and outputs predictions to GCS.
 
 **Usage:**
 ```bash
-python scripts/04_batch_predictions.py --model <model_name> [--sample]
+uv run scripts/d_batch_predictions.py --model <model_name> [--sample]
 # Optional: --sample indicates that predictions should come from gcs://<BUCKET>/prompt_sample.jsonl
+```
+
+### 5. Running smaller datasets for OpenAI and Grok
+
+**`scripts/e_grok_gpt.py`**
+
+- Submits generated prompts to the selected LLM in batch mode (for OpenAI models) or async (for Grok models)
+- Monitors job status and downloads predictions to local machine
+
+**Usage:**
+```bash
+uv run scripts/e_grok_gpt.py --model <model_name> [--estimate_tokens]
+# Optional: --estimate_tokens calculates the expected cost of running these queries (using cl100k_base to approximate Grok models)
+# We assume output tokens will be ~0.5% of input tokens for cost estimation purposes
 ```
 
 ### 5. Parsing and Interpreting the Data
@@ -151,6 +168,4 @@ See [LICENSE](LICENSE).
 **Contact:**  
 For questions or contributions, please open an issue or pull request.
 
----
-
-Let me know if you want to include example outputs, more details on the data format, or instructions for adding new models!
+Or you can reach out directly by emailing [Hal Triedman](mailto:triedman@cs.cornell.edu).

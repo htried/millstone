@@ -13,7 +13,7 @@ import fsspec
 from google.cloud import storage
 
 from utils.utils import (DATA_DIR, PROMPTS_DIR, model_api_spec_map,
-                         model_arg_map)
+                         model_arg_map, most_disagreed_upon_issues)
 
 dotenv.load_dotenv()
 
@@ -53,10 +53,10 @@ def read_evidence(json_path, which):
         data = json.load(f)
         if which == 'pro':
             data = add_evidence(data.get('pros', []), data.get('sources', {}))
-            return '\n\n'.join(data)
+            return '\n\n'.join(random.sample(data, len(data)))
         elif which == 'con':
             data = add_evidence(data.get('cons', []), data.get('sources', {}))
-            return '\n\n'.join(data)
+            return '\n\n'.join(random.sample(data, len(data)))
         elif which == 'all':
             pros = data.get('pros', [])
             cons = data.get('cons', [])
@@ -70,7 +70,7 @@ def read_evidence(json_path, which):
             else:
                 evidence = pros + cons
             data = add_evidence(evidence, data.get('sources', {}))
-            return '\n\n'.join(data)
+            return '\n\n'.join(random.sample(data, len(data)))
         elif which == '75pro':
             pros = data.get('pros', [])
             cons = data.get('cons', [])
@@ -79,7 +79,7 @@ def read_evidence(json_path, which):
             if cons:
                 cons = random.sample(cons, 1)
             data = add_evidence(pros + cons, data.get('sources', {}))
-            return '\n\n'.join(data)
+            return '\n\n'.join(random.sample(data, len(data)))
         elif which == '75con':
             pros = data.get('pros', [])
             cons = data.get('cons', [])
@@ -88,7 +88,7 @@ def read_evidence(json_path, which):
             if pros:
                 pros = random.sample(pros, 1)
             data = add_evidence(cons + pros, data.get('sources', []))
-            return '\n\n'.join(data)
+            return '\n\n'.join(random.sample(data, len(data)))
     return ''
 
 def make_prompts(
@@ -102,7 +102,7 @@ def make_prompts(
         q = query['question']
         framing = query['orientation']
         for _ in range(N):
-            i += 1
+            
             case_1 = "'position <<A>>' or 'position <<B>>'"
             case_2 = "'position <<B>>' or 'position <<A>>'"
             if baseline:
@@ -119,6 +119,7 @@ def make_prompts(
                 )
 
         for prompt in prompts_to_add:
+            i += 1
             if model_api_spec_map[model] == "anthropic":
                 req_dict = {
                     "custom_id": f'request-{q.replace(" ", "_").lower()}-{i}-framing-{framing}-evidence-{evidence_case}',
@@ -129,12 +130,13 @@ def make_prompts(
                     },
                 }
             elif model_api_spec_map[model] == "openai":
+                model_ = f"meta/{model.split('/')[-1]}" if 'llama' in model else model
                 req_dict = {
                     "custom_id": f'request-{q.replace(" ", "_").lower()}-{i}-framing-{framing}-evidence-{evidence_case}',
                     "method": "POST",
                     "url": "/v1/chat/completions",
                     "body": {
-                        "model": f"meta/{model.split('/')[-1]}",
+                        "model": model_,
                         "messages": [{"role": "user", "content": prompt}],
                         "max_tokens": 100,
                     },
@@ -143,8 +145,17 @@ def make_prompts(
             elif model_api_spec_map[model] == "google":
                 req_dict = {
                     "request": {
-                        "contents": [{"role": "user", "parts": [{"text": prompt}]}]
+                        "contents": [{"role": "user", "parts": [{"text": prompt}]}],
+                        "labels": {
+                            "custom_id": f'request-{q.replace(" ", "_").lower()}-{i}-framing-{framing}-evidence-{evidence_case}',
+                        }
                     }
+                }
+
+            elif model_api_spec_map[model] == "x":
+                req_dict = {
+                    "custom_id": f'request-{q.replace(" ", "_").lower()}-{i}-framing-{framing}-evidence-{evidence_case}',
+                    "prompt": prompt,
                 }
             else:
                 raise ValueError(
@@ -172,6 +183,10 @@ def main(args):
     json_files = [os.path.join(DATA_DIR, f) for f in os.listdir(DATA_DIR) if f.endswith('.json')]
     if args.sample:
         json_files = random.sample(json_files, min(5, len(json_files)))
+
+    elif args.gpt_grok:
+        json_files = [os.path.join(DATA_DIR, f) for f in most_disagreed_upon_issues]
+
     for json_path in json_files:
         print(f"Processing {json_path}...")
         questions = read_questions(json_path)
@@ -236,7 +251,7 @@ if __name__ == "__main__":
         "--model",
         type=str,
         default="gemini-2.0-flash",
-        help="Model to use for formatting the data. Options: gemini-2.0-flash, claude-3.5-haiku, claude-opus-4, llama-3.1-8b, llama-3.1-405b.",
+        help="Model to use for formatting the data. Options: gemini-2.0-flash, claude-3.5-haiku, claude-opus-4, llama-3.1-8b, llama-3.1-405b, gpt-4o-mini, gpt-4o, grok-2.",
     )
     parser.add_argument(
         "--N",
@@ -249,10 +264,25 @@ if __name__ == "__main__":
         action="store_true",
         help="Save the prompts to the local prompts directory. If not specified, only save to GCS.",
     )
+    parser.add_argument(
+        "--gpt_grok",
+        action="store_true",
+        help="Use specific topics for GPT-4o-mini and Grok-2.",
+    )
     args = parser.parse_args()
     if args.model not in model_arg_map:
         raise ValueError(
             f"Model {args.model} not found in model_arg_map. Valid models are: {list(model_arg_map.keys())}"
+        )
+    
+    if args.gpt_grok and args.model not in ['gpt-4o-mini', 'gpt-4o', 'grok-3', 'grok-3-mini']:
+        raise ValueError(
+            f"Model {args.model} not supported for --gpt_grok. Valid models are: gpt-4o-mini, gpt-4o, grok-3, grok-3-mini"
+        )
+    
+    if args.gpt_grok and not args.save_local:
+        raise ValueError(
+            "Cannot use --gpt_grok without --save_local. Saving locally (not to GCS) is required for --gpt_grok."
         )
 
     main(args)
