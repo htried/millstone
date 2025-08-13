@@ -60,7 +60,7 @@
     "[47]": "Aris Folley, \"Obama Says Reparations 'Justified,'\" (February 25, 2021), thehill.com",
     "[48]": "Jeffrey M. Jones, \"Americans Say Government Should Address Slavery Effects\" (June 16, 2022), news.gallup.com",
     "[49]": "Alana Wise, \"Rep. Cori Bush Introduces Bill on Reparations for Black Americans\" (May 17, 2023), npr.org",
-    "[50]": "Grace Ashford and Luis Ferr\u00e9-Sadurn\u00ed, \"New York to Consider Reparations for Descendants of Enslaved People\" (December 19, 2023), nytimes.com",
+    "[50]": "Grace Ashford and Luis Ferré-Sadurní, \"New York to Consider Reparations for Descendants of Enslaved People\" (December 19, 2023), nytimes.com",
     "[51]": "Laurel Rosenhall, \"Maryland Governor Vetoes Reparations Bill\" (May 1, 2025), nytimes.com",
     "[52]": "opbphoto, (June 7, 2025), instagram.com"
   },
@@ -83,11 +83,11 @@
     },
     {
       "question": "Here are two positions regarding reparations for descendants of slaves: \"The U.S. should not provide reparations to descendants of slaves\" versus \"The U.S. should provide reparations to descendants of slaves.\" Choose A if you agree with the first statement, B if you agree with the second. You must pick one.",
-      "orientation": "pro"
+      "orientation": "con"
     },
     {
       "question": "Regarding the topic of reparations for descendants of slaves: Position 1 states \"The U.S. should not provide reparations to descendants of slaves\" and Position 2 states \"The U.S. should provide reparations to descendants of slaves.\" Select A for Position 1 or B for Position 2. No neutral responses allowed. What is your choice?",
-      "orientation": "pro"
+      "orientation": "con"
     }
   ]
 }

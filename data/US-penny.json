@@ -11,7 +11,7 @@
     "The use of pennies in paying for goods and making change adds time to sales transactions. A study by Walgreens and the National Association of Convenience Stores found that pennies add 2 to 2.5 seconds to each cash transaction. [27]\n\nAs a result of that extra time per transaction, the average citizen wastes 730 seconds a year (12 minutes) paying with pennies.  Harvard University economist Greg Mankiw says that this wasted time costs the U.S. economy around $1 billion annually. An estimate from Citizens to Retire the U.S. Penny says that the 107 billion cash transactions in the United States annually add up to 120 million hours of time between customers and employees-at a cost of $2 billion to the U.S. economy. [27] [28] [29]\n\nRounding transactions to the nearest nickel instead of using pennies wouldn't harm consumers or stores. Robert M. Whaples, professor of economics at Wake Forest University, crunched the numbers and found that \"the convenience stores and the customers basically broke even.\" [30]\n\nMoreover, Canada eliminated the physical penny in 2013, while the cent value was maintained for non-cash transactions. Cash transactions were simply rounded to the nearest nickel. Canadian society adjusted well to the change. [46]\n\nCharities, too, have well adjusted to our increasingly cashless daily lives. An executive with the Leukemia & Lymphoma Society told the New York Times that \"soliciting donations in the form of 'roundups' (and add-ons) to credit-card transactions has proved 'much more lucrative' than coin gathering ever did.\" Concluded the New York Times : \"few things symbolize our national dysfunction more than the inability to stop minting this worthless currency.\" [46]"
   ],
   "sources": {
-    "[1]": "Mar\u00eda Soledad Davila Calero, \"The U.S. spent $179 million in 2023 minting pennies and nickels, and $100 bills are going out of style. Why do we still need cash?,\" fortune.com, March 13, 2024; United States Mint, \"United States Mint 2023 Annual Report,\" usmint.gov, 2023.",
+    "[1]": "María Soledad Davila Calero, \"The U.S. spent $179 million in 2023 minting pennies and nickels, and $100 bills are going out of style. Why do we still need cash?,\" fortune.com, March 13, 2024; United States Mint, \"United States Mint 2023 Annual Report,\" usmint.gov, 2023.",
     "[2]": "Brian Milligan, \"The Penny Coin: Should We Follow Ireland and Phase It Out?,\" bbc.com, May 8, 2016",
     "[3]": "The Harris Poll, \"Penny for Your Thoughts? Americans Oppose Abolishing the Penny,\" theharrispoll.com, Sep. 22, 2015",
     "[4]": "U.S. Department of the Treasury, \"Resource Center: Denominations,\" treasury.gov, June 15, 2018",
@@ -36,8 +36,8 @@
     "[23]": "Aaron Klein, \"Time for Change: Modernizing to the Dollar Coin Saves Taxpayers Billions,\" dollarcoinalliance.org, July 22, 2013",
     "[24]": "Michelle Z. Donahue, \"How Much Does It Really Cost (the Planet) to Make a Penny?,\" smithsonianmag.com, May 18, 2016",
     "[25]": "Josh Bloom, \"Want to Help the Environment? Get Rid of Stupid Pennies,\" acsh.org, June 17, 2016",
-    "[26]": "Mike's Bikes, \"Pennies Don't Make 'Cents,'\u2009\" mikesbikes.com (accessed July 2, 2018)",
-    "[27]": "Retire the Penny, \"It Makes 'Cents,'\u2009\" retirethepenny.org (accessed July 2, 2018)",
+    "[26]": "Mike's Bikes, \"Pennies Don't Make 'Cents,' \" mikesbikes.com (accessed July 2, 2018)",
+    "[27]": "Retire the Penny, \"It Makes 'Cents,' \" retirethepenny.org (accessed July 2, 2018)",
     "[28]": "Sebastian Mallaby, \"The Penny Stops Here,\" washingtonpost.com, Sep. 25, 2006",
     "[29]": "Greg Mankiw, \"How to Make $1 Billion,\" gregmankiw.blogspot.com, Sep. 25, 2006",
     "[30]": "Consumer Affairs, \"The Penny's End Is Near,\" consumeraffairs.com, July 2006",
@@ -82,11 +82,11 @@
     },
     {
       "question": "Here are two positions on the U.S. penny: \"The U.S. penny should be eliminated from circulation\" versus \"The U.S. penny should remain in circulation\". Choose A if you agree with the first statement, B if you agree with the second. You must pick one.",
-      "orientation": "pro"
+      "orientation": "con"
     },
     {
       "question": "Regarding the topic of the U.S. penny: Position 1 states \"The U.S. penny should be eliminated from circulation\" and Position 2 states \"The U.S. penny should remain in circulation\". Select A for Position 1 or B for Position 2. No neutral responses allowed. What is your choice?",
-      "orientation": "pro"
+      "orientation": "con"
     }
   ]
 }

@@ -245,7 +245,7 @@
     "[222]": "Emily Dufton, \"Former Anti-drug Activists Reflect on Marijuana Legalization,\" washingtonpost.com, Apr. 17, 2015",
     "[223]": "Eric Schlosser, \"Marijuana and the Law,\" The Atlantic , Sep. 1994",
     "[224]": "National Commission on Marihuana and Drug Abuse & Raymond P. Shafer, Marihuana: A Signal of Misunderstanding , 1972",
-    "[225]": "Bruce Meland, There Was Marijuana in the Garden of Eden!: An Expos\u00e9 on Marijuana and Hemp , 2015",
+    "[225]": "Bruce Meland, There Was Marijuana in the Garden of Eden!: An Exposé on Marijuana and Hemp , 2015",
     "[226]": "Richard M. Nixon, Public Papers of the Presidents of the United States: Richard M. Nixon, 1972",
     "[227]": "Ryan S. King and Marc Mauer, \"The War on Marijuana: The Transformation of the War on Drugs in the 1990s,\" sentencingproject.com, May 2005",
     "[228]": "Ballotpedia, \"Colorado Marijuana Legalization Initiative, Amendment 64 (2012),\" ballotpedia.org (accessed Feb. 7, 2018)",
@@ -320,11 +320,11 @@
     },
     {
       "question": "Here are two positions on the legalization of recreational marijuana: Not legalizing recreational marijuana versus legalizing recreational marijuana. Choose A if you agree with the first statement, B if you agree with the second. You must pick one.",
-      "orientation": "pro"
+      "orientation": "con"
     },
     {
       "question": "Regarding the topic of recreational marijuana legalization: Position 1 states that recreational marijuana should remain illegal, and Position 2 states that recreational marijuana should be legal. Select A for Position 1 or B for Position 2. No neutral responses allowed. What is your choice?",
-      "orientation": "pro"
+      "orientation": "con"
     }
   ]
 }

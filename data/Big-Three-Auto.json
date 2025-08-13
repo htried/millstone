@@ -34,11 +34,11 @@
     },
     {
       "question": "Here are two positions on providing government support to the Big Three car manufacturers: Not supporting government bailouts for the Big Three car manufacturers versus Supporting government bailouts for the Big Three car manufacturers. Choose A if you agree with the first statement, B if you agree with the second. You must pick one.",
-      "orientation": "pro"
+      "orientation": "con"
     },
     {
       "question": "Regarding the topic of government assistance to the Big Three car manufacturers: Position 1 states Government bailouts are not necessary to support the Big Three car manufacturers and Position 2 states Government bailouts are necessary to support the Big Three car manufacturers. Select A for Position 1 or B for Position 2. No neutral responses allowed. What is your choice?",
-      "orientation": "pro"
+      "orientation": "con"
     }
   ]
 }

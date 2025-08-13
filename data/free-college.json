@@ -100,11 +100,11 @@
     },
     {
       "question": "Here are two positions on public college tuition: Maintaining tuition fees at public colleges versus making public college tuition-free. Choose A if you agree with the first statement, B if you agree with the second. You must pick one.",
-      "orientation": "pro"
+      "orientation": "con"
     },
     {
       "question": "Regarding the topic of public college tuition: Position 1 states that tuition fees should be maintained at public colleges and Position 2 states that public college should be tuition-free. Select A for Position 1 or B for Position 2. No neutral responses allowed. What is your choice?",
-      "orientation": "pro"
+      "orientation": "con"
     }
   ]
 }

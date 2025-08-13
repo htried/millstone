@@ -145,7 +145,7 @@
     "[130]": "Pam Belluck, \"The F.D.A. Now Says It Plainly: Morning-After Pills Are Not Abortion Pills,\" nytimes.com, December 23, 2022",
     "[131]": "Bill Chappell, \"FDA Approves Opill, the First Daily Birth Control Pill without a Prescription,\" npr.org, July 13, 2023",
     "[132]": "FDA, \"FDA Approves First Nonprescription Daily Oral Contraceptive,\" fda.gov, July 13, 2023",
-    "[133]": "Perrigo, \"Perrigo Announces U.S. FDA Approval for Opill\u00ae OTC Daily Oral Contraceptive,\" prnewswire.com, July 13, 2023",
+    "[133]": "Perrigo, \"Perrigo Announces U.S. FDA Approval for Opill® OTC Daily Oral Contraceptive,\" prnewswire.com, July 13, 2023",
     "[134]": "Sydney Lupkin, \"First Over-The-Counter Birth Control Pill Heads to Stores,\" npr.org, March 4, 2024",
     "[135]": "Bindu Bansinath, \"The FDA Has Approved a New Copper IUD,\" thecut.com, February 26, 2025",
     "[136]": "United Nations Department of Economic and Social Affairs, \"World Family Planning 2022\" (2022), un.org",
@@ -184,11 +184,11 @@
     },
     {
       "question": "Here are two positions on the availability of birth control pills: \"Birth control pills should not be available over the counter\" versus \"Birth control pills should be available over the counter.\" Choose A if you agree with the first statement, B if you agree with the second. You must pick one.",
-      "orientation": "pro"
+      "orientation": "con"
     },
     {
       "question": "Regarding the topic of the availability of birth control pills: Position 1 states \"Birth control pills should not be available over the counter\" and Position 2 states \"Birth control pills should be available over the counter.\" Select A for Position 1 or B for Position 2. No neutral responses allowed. What is your choice?",
-      "orientation": "pro"
+      "orientation": "con"
     }
   ]
 }

@@ -45,11 +45,11 @@
     },
     {
       "question": "Here are two positions on belief in Santa Claus: Belief in Santa Claus is false versus Belief in Santa Claus is true. Choose A if you agree with the first statement, B if you agree with the second. You must pick one.",
-      "orientation": "pro"
+      "orientation": "con"
     },
     {
       "question": "Regarding the topic of belief in Santa Claus: Position 1 states Belief in Santa Claus is false and Position 2 states Belief in Santa Claus is true. Select A for Position 1 or B for Position 2. No neutral responses allowed. What is your choice?",
-      "orientation": "pro"
+      "orientation": "con"
     }
   ]
 }

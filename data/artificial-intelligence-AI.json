@@ -55,7 +55,7 @@
     "[35]": "Aaron Smith and Janna Anderson, \"AI, Robotics, and the Future of Jobs,\" pewresearch.org, August 6, 2014",
     "[36]": "ACLU, \"Facial Recognition,\" aclu.org (accessed October 15, 2021)",
     "[37]": "Pjotr Sauer, \"Privacy Fears as Moscow Metro Rolls out Facial Recognition Pay System,\" theguardian.com, October 15, 2021",
-    "[38]": "Gleb Stolyarov and Gabrielle T\u00e9trault-Farber, \"'Face Control': Russian Police Go Digital against Protesters,\" reuters.com, February 11, 2021",
+    "[38]": "Gleb Stolyarov and Gabrielle Tétrault-Farber, \"'Face Control': Russian Police Go Digital against Protesters,\" reuters.com, February 11, 2021",
     "[39]": "Drew Harwell, \"Doorbell-Camera Firm Ring Has Partnered with 400 Police Forces, Extending Surveillance Concerns,\" washingtonpost.com, August 28, 2019",
     "[40]": "David A. Teich, \"Artificial Intelligence and Data Privacy - Turning a Risk into a Benefit,\" forbes.com, August 10, 2020",
     "[41]": "Kashmir Hill, \"How Target Figured Out A Teen Girl Was Pregnant Before Her Father Did,\" forbes.com, February 16, 2012",
@@ -154,11 +154,11 @@
     },
     {
       "question": "Here are two positions regarding the societal impact of Artificial Intelligence: AI is detrimental to society versus AI is beneficial for society. Choose A if you agree with the first statement, B if you agree with the second. You must pick one.",
-      "orientation": "pro"
+      "orientation": "con"
     },
     {
       "question": "Regarding the topic of the societal impact of Artificial Intelligence: Position 1 states AI is detrimental to society and Position 2 states AI is beneficial for society. Select A for Position 1 or B for Position 2. No neutral responses allowed. What is your choice?",
-      "orientation": "pro"
+      "orientation": "con"
     }
   ]
 }

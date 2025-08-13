@@ -24,7 +24,7 @@
     "[5]": "Organization for Economic Cooperation and Development (OECD), \"PISA in Focus No. 46: Does Homework Perpetuate Inequities in Education?\" (December 2014), oecd.org",
     "[6]": "Adam V. Maltese, Robert H. Tai, and Xitao Fan, \"When is Homework Worth the Time?: Evaluating the Association between Homework and Achievement in High School Science and Math,\" The High School Journal (2012)",
     "[7]": "Harris Cooper, Jorgianne Civey Robinson, and Erika A. Patall, \"Does Homework Improve Academic Achievement? A Synthesis of Research, 1987-2003,\" Review of Educational Research (2006)",
-    "[8]": "G\u00f6khan Bas, Cihad Sent\u00fcrk, and Fatih Mehmet Cigerci, \"Homework and Academic Achievement: A Meta-Analytic Review of Research,\" Issues in Educational Research (2017)",
+    "[8]": "Gökhan Bas, Cihad Sentürk, and Fatih Mehmet Cigerci, \"Homework and Academic Achievement: A Meta-Analytic Review of Research,\" Issues in Educational Research (2017)",
     "[9]": "Huiyong Fan, Jianzhong Xu, Zhihui Cai, Jinbo He, and Xitao Fan, \"Homework and Students' Achievement in Math and Science: A 30-Year Meta-Analysis, 1986-2015,\" Educational Research Review (2017)",
     "[10]": "Charlene Marie Kalenkoski and Sabrina Wulff Pabilonia, \"Does High School Homework Increase Academic Achievement?\" (April 2014), iza.og",
     "[11]": "Ron Kurtus, \"Purpose of Homework\" (July 8, 2012), school-for-champions.com",
@@ -76,7 +76,7 @@
     "[57]": "George Winograd, \"How Many Schools in the US 2025 (New Data)\" (February 10, 2025), missiongraduatenm.org",
     "[58]": "Belle Beauchesne, \"Is Homework Truly Necessary and Beneficial to Students?\" (January 24, 2023), blogs.hebronacademy.org",
     "[59]": "Chris McNutt, \"This Is Why We Should Stop Giving Homework\" (January 27, 2023), humanrestorationproject.org",
-    "[60]": "Anne Th\u00e9riault, \"Is Homework Good for Kids?\" (September 13, 2023), thewalrus.ca",
+    "[60]": "Anne Thériault, \"Is Homework Good for Kids?\" (September 13, 2023), thewalrus.ca",
     "[61]": "The Centre for Educational Neuroscience, \"Does Homework Work? The Science of When and How to Approach It\" (February 4, 2025), educationalneuroscience.org.uk",
     "[62]": "Nathan McJames, Andrew Parnell, and Ann O'Shea, \"Little and Often: Causal Inference Machine Learning Demonstrates the Benefits of Homework for Improving Achievement in Mathematics and Science\" Learning and Instruction (October 2024), sciencedirect.com",
     "[63]": "Sarah Schwartz, \"Reading Scores Fall to New Low on NAEP, Fueled by Declines for Struggling Students\" (January 29, 2025), edweek.org"
@@ -100,11 +100,11 @@
     },
     {
       "question": "Here are two positions on homework: \"Homework is not beneficial\" versus \"Homework is beneficial\". Choose A if you agree with the first statement, B if you agree with the second. You must pick one.",
-      "orientation": "pro"
+      "orientation": "con"
     },
     {
       "question": "Regarding the topic of homework: Position 1 states \"Homework is not beneficial\" and Position 2 states \"Homework is beneficial\". Select A for Position 1 or B for Position 2. No neutral responses allowed. What is your choice?",
-      "orientation": "pro"
+      "orientation": "con"
     }
   ]
 }

@@ -7,7 +7,7 @@
   ],
   "cons": [
     "Halloween is already a dangerous holiday, with about 43% more pedestrians dying on the holiday than other autumn nights. Moving the holiday to Saturday, the most dangerous day of the week, could further increase injuries and deaths because people would start drinking alcohol earlier in the day and consume more overall than they would on a weeknight. [21]\n\nDrunk drivers are already involved in more than 25% of pedestrian deaths on Halloween. Ensuring that Halloween always occurs on a weekend night would lead to more binge drinking and drunk driving, making pedestrians less safe. [22]\n\nDrivers ages 15-25 are responsible for nearly a third of all child pedestrian fatal accidents on Halloween. Moving the holiday to the weekend every year would likely increase the fatalities because of later curfews and a lack of school and other responsibilities the following day. [23]\n\nSaturdays have the most fatal car crashes of any day, with a total of 5,873 during 2017 (over 500 more than the second-highest crash day). In 2017 there were an additional 799,000 nonfatal traffic accidents on Saturdays. 53% more road deaths occur on Saturdays than on Tuesdays, the safest day of the week. [24] [25] [26]",
-    "The origins of Halloween have religious and cultural importance, tracing back 2,000 years to the pagan festival Samhain (pronounced \"sow-in\"), in which the ancient Celts celebrated the end of summer from sunset on Oct. 31 to sunset on Nov. 1. They believed that the ghosts of the dead returned to Earth, blurring the boundary between the living and dead. About 43 ce the Romans, who were then ruling the Celtic territory, combined their Feralia festival honoring the dead with the Samhain activities. [27] [28]\n\nSince the mid-8th century, as Encyclop\u00e6dia Britannica explains, the Catholic church has observed \"Allhallotide, a three-day triduum dedicated to remembering the dead that begins with Halloween (October 31) and is followed by All Saints' Day (November 1) and All Souls' Day (November 2).\" [27] [29] [39]",
+    "The origins of Halloween have religious and cultural importance, tracing back 2,000 years to the pagan festival Samhain (pronounced \"sow-in\"), in which the ancient Celts celebrated the end of summer from sunset on Oct. 31 to sunset on Nov. 1. They believed that the ghosts of the dead returned to Earth, blurring the boundary between the living and dead. About 43 ce the Romans, who were then ruling the Celtic territory, combined their Feralia festival honoring the dead with the Samhain activities. [27] [28]\n\nSince the mid-8th century, as Encyclopædia Britannica explains, the Catholic church has observed \"Allhallotide, a three-day triduum dedicated to remembering the dead that begins with Halloween (October 31) and is followed by All Saints' Day (November 1) and All Souls' Day (November 2).\" [27] [29] [39]",
     "Halloween has historically always been a night of pranks. Celebrations in colonial America included \"mischief-making of all kinds.\" These days, kids might toss toilet paper in trees, jump out to scare people, or drink while underage. [27] [30]\n\nAmarjeet Sidhu, a seventh grader at the time of this quote, stated, \"I think that Halloween should always be celebrated on the 31st. If it is celebrated on Saturdays, kids would go out late at night and put graffiti on signs, smash pumpkins and egg houses. I know this from experience. It won't feel right if Halloween is not on Oct. 31.\" [31]\n\nMany kids don't realize that pranks they think of as harmless could actually get them arrested for vandalism or assault. Some less serious pranks are still subject to community service or monetary penalties. When Halloween is on a Saturday, kids are able to stay out later causing trouble. If Halloween were always on a Saturday, they could get into the annual habit of coming up with dangerous pranks. [30] [32]"
   ],
   "sources": {
@@ -37,7 +37,7 @@
     "[24]": "National Safety Council Injury Facts, \"Crashes by Time of Day and Day of Week,\" injuryfacts.nsc.org (accessed Oct. 10, 2019)",
     "[25]": "Avvo, \"Average Day of Accidents in America,\" avvo.com (accessed Oct. 10, 2019)",
     "[26]": "David Carrig, \"Saturday Is Most Dangerous Day of the Week to Drive; Afternoon Rush Hour Worse Than Morning,\" usatoday.com, May 26, 2018",
-    "[27]": "Encyclop\u00e6dia Britannica, \"Halloween,\" britannica.com, October 4, 2024",
+    "[27]": "Encyclopædia Britannica, \"Halloween,\" britannica.com, October 4, 2024",
     "[28]": "abravefaith, \"Halloween - Summer's End, a Feast for Remembering,\" abravefaith.com, Oct. 31, 2015",
     "[29]": "Catholic Online, \"All Saints' Day,\" catholic.org (accessed Oct. 23, 2019)",
     "[30]": "Deanne Katz, \"Halloween Pranks That Will Get You Arrested,\" findlaw.com, Oct. 30, 2012",
@@ -49,7 +49,7 @@
     "[36]": "National Retail Federation, \"2021 Halloween Trends,\" nrf.com (accessed Sep. 29, 2021)",
     "[37]": "National Retail Federation, \"2022 Halloween Trends,\" nrf.com (accessed Oct. 17, 2022)",
     "[38]": "National Retail Federation, \"Halloween Spending to Reach Record $12.2 Billion as Participation Exceeds Pre-Pandemic Levels,\" nrf.com, Sep. 20, 2023",
-    "[39]": "Encyclop\u00e6dia Britannica, \"All Saints' Day,\" britannica.com, Nov. 2, 2023"
+    "[39]": "Encyclopædia Britannica, \"All Saints' Day,\" britannica.com, Nov. 2, 2023"
   },
   "paraphrases": [
     {
@@ -70,11 +70,11 @@
     },
     {
       "question": "Here are two positions on permanently moving Halloween: Not having Halloween on a Saturday versus Having Halloween on a Saturday. Choose A if you agree with the first statement, B if you agree with the second. You must pick one.",
-      "orientation": "pro"
+      "orientation": "con"
     },
     {
       "question": "Regarding the topic of permanently moving Halloween: Position 1 states \"Halloween should not always be on Saturday.\" and Position 2 states \"Halloween should always be on Saturday\". Select A for Position 1 or B for Position 2. No neutral responses allowed. What is your choice?",
-      "orientation": "pro"
+      "orientation": "con"
     }
   ]
 }

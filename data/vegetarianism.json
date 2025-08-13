@@ -96,7 +96,7 @@
     "[83]": "Colin Spencer, The Heretics Feast: A History of Vegetarianism , 1995",
     "[84]": "Casey Roberts, Clayton Spurgeon, and John Fowler, \"Characteristics of the United States Organic Beef Industry,\" aces.nmsu.edu, July 2007",
     "[85]": "National Sustainable Agriculture Information Service, \"Organic Standards for Livestock Production: Excerpts of USDA's National Organic Program Regulations,\" attra.ncat.org, February 17, 2010",
-    "[86]": "Pramil N. Singh, Joan Sabat\u00e9, and Gary E Fraser, \"Does Low Meat Consumption Increase Life Expectancy in Humans?,\" American Journal of Clinical Nutrition , 2003",
+    "[86]": "Pramil N. Singh, Joan Sabaté, and Gary E Fraser, \"Does Low Meat Consumption Increase Life Expectancy in Humans?,\" American Journal of Clinical Nutrition , 2003",
     "[87]": "Cargill, \"High-Quality Products,\" cargill.com (accessed March 30, 2011)",
     "[88]": "Temple Grandin, \"Animal Welfare in Slaughter Plants,\" Proceedings of the 29th Annual Conference of American Association of Bovine Practitioners , 1996",
     "[89]": "Ingrid Newkirk, \"Temple Grandin: Helping the Animals We Can't Save,\" prime.peta.org, February 14, 2010",
@@ -189,11 +189,11 @@
     },
     {
       "question": "Here are two positions on the impact of vegetarian diets on individuals and society: A vegetarian diet is not beneficial versus A vegetarian diet is beneficial. Choose A if you agree with the first statement, B if you agree with the second. You must pick one.",
-      "orientation": "pro"
+      "orientation": "con"
     },
     {
       "question": "Regarding the topic of vegetarian diets and their effects on individuals and society: Position 1 states that a vegetarian diet is not beneficial and Position 2 states that a vegetarian diet is beneficial. Select A for Position 1 or B for Position 2. No neutral responses allowed. What is your choice?",
-      "orientation": "pro"
+      "orientation": "con"
     }
   ]
 }

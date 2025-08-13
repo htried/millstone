@@ -92,18 +92,41 @@ async def do_grok_predictions(input_file, output_file):
     max_requests_per_second = max_rpm // 60
     semaphore = asyncio.Semaphore(max_requests_per_second)
 
-    async def rate_limited_acquire():
-        await semaphore.acquire()
-        # Release after 1 second to maintain rpm limit
-        await asyncio.sleep(1)
-        semaphore.release()
+    class RateLimiter:
+        def __init__(self, semaphore):
+            self.semaphore = semaphore
+        
+        async def __aenter__(self):
+            await self.semaphore.acquire()
+            return self
+        
+        async def __aexit__(self, exc_type, exc_val, exc_tb):
+            # Release after 1 second to maintain rpm limit
+            await asyncio.sleep(1)
+            self.semaphore.release()
 
     async def process_request(request) -> Response:
-        async with rate_limited_acquire():
-            print(f"Processing request: {request}")
-            chat = client.chat.create(model=model, max_tokens=100)
-            chat.append(user(request))
-            return await chat.sample()
+        try:
+            async with RateLimiter(semaphore):
+                # print(f"Processing request: {request}")
+                chat = client.chat.create(model=model)
+                chat.append(user(request))
+                response = await chat.sample()
+                # print(f"Response content: {response.content}")
+                # print(f"Response _choice: {response._choice}")
+                # print(f"Response finish_reason: {response.finish_reason}")
+                # print(f"Response role: {response.role}")
+                # print(f"Response reasoning_content: {response.reasoning_content}")
+                # print(f"Response type: {type(response)}")
+                return response
+        except Exception as e:
+            print(f"Error processing request: {e}")
+            # Return a mock response with error info
+            class MockResponse:
+                def __init__(self, error_msg):
+                    self.content = f"ERROR: {error_msg}"
+                    self.reasoning_content = f"ERROR: {error_msg}"
+            return MockResponse(str(e))
 
     tasks = []
     with open(input_file, "r") as f:
@@ -112,16 +135,44 @@ async def do_grok_predictions(input_file, output_file):
             # Store both custom_id and the coroutine for later association
             tasks.append((data.get('custom_id'), process_request(data['prompt'])))
 
-    # Unpack the coroutines for asyncio.gather
-    custom_ids, coros = zip(*tasks)
-    responses = await asyncio.gather(*coros)
-
+    # Process requests in batches to save incrementally
+    batch_size = 100  # Save every 100 responses
     with open(output_file, "w") as f:
-        for (custom_id, response) in zip(custom_ids, responses):
-            f.write(json.dumps({
-                'custom_id': custom_id,
-                'response': response.content[0].text
-            }) + "\n")
+        for i in range(0, len(tasks), batch_size):
+            batch_tasks = tasks[i:i + batch_size]
+            custom_ids, coros = zip(*batch_tasks)
+            
+            try:
+                print(f"Processing batch {i//batch_size + 1}/{(len(tasks) + batch_size - 1)//batch_size}")
+                responses = await asyncio.gather(*coros, return_exceptions=True)
+                
+                for j, (custom_id, response) in enumerate(zip(custom_ids, responses)):
+                    if isinstance(response, Exception):
+                        print(f"Error for {custom_id}: {response}")
+                        f.write(json.dumps({
+                            'custom_id': custom_id,
+                            'response': f"ERROR: {response}"
+                        }) + "\n")
+                    else:
+                        # print(f"Writing response for {custom_id}: {response.reasoning_content}")
+                        f.write(json.dumps({
+                            'custom_id': custom_id,
+                            'response': response.content
+                        }) + "\n")
+                
+                # Flush to disk after each batch
+                f.flush()
+                print(f"Completed batch {i//batch_size + 1}")
+                
+            except Exception as e:
+                print(f"Error processing batch {i//batch_size + 1}: {e}")
+                # Write error responses for this batch
+                for custom_id, _ in batch_tasks:
+                    f.write(json.dumps({
+                        'custom_id': custom_id,
+                        'response': f"ERROR: {e}"
+                    }) + "\n")
+                f.flush()
 
 def estimate_tokens(input_file, model):
     total_input_tokens = 0
@@ -182,8 +233,8 @@ if __name__ == "__main__":
                 output_file=os.path.join(PREDICTIONS_DIR, f'predictions_{args.model}.jsonl')
             )
         elif 'grok' in args.model:
-            do_grok_predictions(
+            asyncio.run(do_grok_predictions(
                 input_file=os.path.join(PROMPTS_DIR, f'prompts_{args.model}.jsonl'),
                 output_file=os.path.join(PREDICTIONS_DIR, f'predictions_{args.model}.jsonl')
-            )
+            ))
 

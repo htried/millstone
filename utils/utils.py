@@ -4,9 +4,9 @@ import random
 REPO_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # OUTPUT_DIR = os.path.join(REPO_DIR, 'data')
 # DATA_DIR = OUTPUT_DIR
-DATA_DIR = os.path.join(REPO_DIR, 'data_new')
+DATA_DIR = os.path.join(REPO_DIR, 'data')
 PROMPTS_DIR = os.path.join(REPO_DIR, 'prompts')
-PREDICTIONS_DIR = os.path.join(REPO_DIR, 'predictions_new')
+PREDICTIONS_DIR = os.path.join(REPO_DIR, 'predictions')
 PROCON_LINKS_FILE = os.path.join(REPO_DIR, 'utils', 'procon-links.txt')
 
 model_arg_map = {

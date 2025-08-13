@@ -79,11 +79,11 @@
     },
     {
       "question": "Here are two positions on whether minors should be allowed to play violent video games: Prohibiting minors from playing violent video games versus Allowing minors to play violent video games. Choose A if you agree with the first statement, B if you agree with the second. You must pick one.",
-      "orientation": "pro"
+      "orientation": "con"
     },
     {
       "question": "Regarding the topic of minors playing violent video games: Position 1 states that minors should be prohibited from playing violent video games and Position 2 states that minors should be allowed to play violent video games. Select A for Position 1 or B for Position 2. No neutral responses allowed. What is your choice?",
-      "orientation": "pro"
+      "orientation": "con"
     }
   ]
 }

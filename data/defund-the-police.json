@@ -14,9 +14,9 @@
     "[1]": "Clare Proctor and Juan Pablo Garnham, \"For Those Texas Organizers and Officials, Defunding the Police Means Remedying Effects of Racism,\" texastribune.org, June 13, 2020",
     "[2]": "Amanda Arnold, \"What Exactly Does It Mean to Defund the Police?,\" thecut.com, June 12, 2020",
     "[3]": "Annie Lowrey, \"Defund the Police,\" theatlantic.com, June 5, 2020",
-    "[4]": "Melissa Gira Grant, \"The Rush to Redefine 'Defund the Police,'\u200a\" newrepublic.com, June 9, 2020",
+    "[4]": "Melissa Gira Grant, \"The Rush to Redefine 'Defund the Police,' \" newrepublic.com, June 9, 2020",
     "[5]": "Scottie Andrew, \"There's a Growing Call to Defund Police. Here's What It Means,\" cnn.com, June 17, 2020",
-    "[6]": "Ruair\u00ed Arrieta-Kenna, \"The Deep Roots-and New Offshoots-of 'Abolish the Police,'\u200a\" politico.com, June 12, 2020",
+    "[6]": "Ruairí Arrieta-Kenna, \"The Deep Roots-and New Offshoots-of 'Abolish the Police,' \" politico.com, June 12, 2020",
     "[7]": "Urban Institute, \"Police and Corrections Expenditures,\" urban.org (accessed June 17, 2020)",
     "[8]": "Polly Mosendz and Jameelah D. Robinson, \"While Crime Fell, the Cost of Cops Soared,\" bloomberg.com, June 4, 2020",
     "[9]": "Richard C. Auxier, \"What Police Spending Data Can (and Cannot) Explain amid Calls to Defund the Police,\" urban.org, June 9, 2020",
@@ -29,12 +29,12 @@
     "[16]": "Alexi Jones, \"Police Stops Are Still Marred by Racial Discrimination, New Data Shows,\" prisonpolicy.org, Oct. 12, 2018",
     "[17]": "\"Police Violence Map,\" mappingpoliceviolence.org (accessed June 17, 2020)",
     "[18]": "Sarah Beller, \"The American Public Health Association Declares Police Violence a Public Health Issue,\" filtermag.org, Nov. 15, 2018",
-    "[19]": "Amina Khan, \"In New York, Major Crime Complaints Fell When Cops Took a Break from 'Proactive Policing,'\u200a\u200a\" latimes.com, Sep. 25, 2017",
+    "[19]": "Amina Khan, \"In New York, Major Crime Complaints Fell When Cops Took a Break from 'Proactive Policing,'  \" latimes.com, Sep. 25, 2017",
     "[20]": "Mariame Kaba, \"Yes, We Mean Literally Abolish the Police,\" nytimes.com, June 12, 2020",
     "[21]": "Marilynn S. Johnson, Street Justice: A History of Police Violence in New York City , 2004",
     "[22]": "Philip V. McHarris and Thenjiwe McHarris, \"No More Money for the Police,\" nytimes.com, May 30, 2020",
     "[23]": "Jeff Hargarten et al., \"Every Police-Involved Death in Minnesota Since 2000,\" startribune.com, May 31, 2020",
-    "[24]": "Vera Bergengruen and Tessa Berenson, \"\u200a'It Was a Tinderbox': How George Floyd's Killing Highlighted America's Police Reform Failures,\" time.com, June 4, 2020",
+    "[24]": "Vera Bergengruen and Tessa Berenson, \" 'It Was a Tinderbox': How George Floyd's Killing Highlighted America's Police Reform Failures,\" time.com, June 4, 2020",
     "[25]": "Sam Levin, \"'It's Not About Bad Apples': How US Police Reforms Have Failed to Stop Brutality and Violence,\" theguardian.com, June 16, 2020",
     "[26]": "Kirsten Weir, \"Policing in Black and White,\" apa.org, Dec. 2016",
     "[27]": "Alex Vitale, \"Why Police Reform Is Not Enough,\" yesmagazine.org, June 2, 2020",
@@ -72,7 +72,7 @@
     "[59]": "Ian T. Adams, Scott M. Mourtgos, and Justin Nix, \"Turnover in Large US Police Agencies Following the George Floyd Protests,\" osf.io/r9mjf/, Mar. 1, 2023",
     "[60]": "Martin Kaste, \"Police Didn't Get Defunded but Many Large Departments Are Shrinking,\" npr.org, Mar. 18, 2023",
     "[61]": "The Urban Institute, \"Criminal Justice Expenditures: Police, Corrections, and Courts,\" urban.org (accessed July 6, 2023)",
-    "[62]": "Charles M. Blow, \"\u200a'Defund the Police' Is Dead. Now What?,\" nytimes.com, Aug. 31, 2022",
+    "[62]": "Charles M. Blow, \" 'Defund the Police' Is Dead. Now What?,\" nytimes.com, Aug. 31, 2022",
     "[63]": "Lauren M. Johnson, \"Colin Kaepernick Calls for Abolishing Police and Prisons in New Essay Series,\" cnn.com, Oct. 10, 2020",
     "[64]": "Will Saletan, \"Americans Don't Want to Defund the Police. Here's What They Do Want.,\" slate.com, Oct. 17, 2021",
     "[65]": "Chris Cillizza, \"This Was the Single Most Revealing Line in Biden's State of the Union Speech,\" cnn.com, Mar. 2, 2022"
@@ -96,11 +96,11 @@
     },
     {
       "question": "Here are two positions regarding the funding and structure of police departments: Police departments should not be defunded or abolished versus Police departments should be defunded or abolished. Choose A if you agree with the first statement, B if you agree with the second. You must pick one.",
-      "orientation": "pro"
+      "orientation": "con"
     },
     {
       "question": "Regarding the topic of police department funding and structure: Position 1 states that police departments should not be defunded or abolished and Position 2 states that police departments should be defunded or abolished. Select A for Position 1 or B for Position 2. No neutral responses allowed. What is your choice?",
-      "orientation": "pro"
+      "orientation": "con"
     }
   ]
 }

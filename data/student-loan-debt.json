@@ -31,7 +31,7 @@
     "[16]": "Chris Arnold, \"Forgiving Student Debt Would Boost Economy, Economists Say\" (November 25, 2019), npr.org",
     "[17]": "Judith Scott-Clayton, \"Shrinking Racial Gaps in Student Debt and Default: Recommendations to Congress\" (March 6, 2019), ccrc.tc.columbia.edu",
     "[18]": "Cristina Silva, \"The Student Debt Crisis Is Crushing Black Americans. Here's How Loan Forgiveness Could Help\" (April 15, 2021), usatoday.com",
-    "[19]": "Rapha\u00ebl Charron-Chenier et al., \"Student Debt Forgiveness Options: Implications for Policy and Racial Equity\" (August 2020), rooseveltinstitute.org",
+    "[19]": "Raphaël Charron-Chenier et al., \"Student Debt Forgiveness Options: Implications for Policy and Racial Equity\" (August 2020), rooseveltinstitute.org",
     "[20]": "Knowledge at Wharton, \"The Student Debt Crisis: Could It Slow the U.S. Economy?\" (October 22, 2018), knowledge.wharton.upenn.edu",
     "[21]": "U.S. Supreme Court, Williams v. United States Fid. & Guar. Co. (1915), justia.com",
     "[22]": "Ethan Trex, \"7 Wildly Successful People Who Survived Bankruptcy\" (November 6, 2015), mentalfloss.com",
@@ -39,7 +39,7 @@
     "[24]": "Jeffrey J. Selingo, \"Did Your College Mislead You About Job Prospects? It Might Become Far Easier to Have Your Loans Forgiven.\" (July 20, 2016), washingtonpost.com",
     "[25]": "Megan Thompson, \"Are You Older than 60 and Paying Off Student Loans? Tell Us Your Story.\" (September 3, 2017), pbs.org",
     "[26]": "Rebecca Safier, \"50 Percent Say Mass Student Loan Forgiveness Unfair to Former Borrowers: Survey\" (April 29, 2020), studentloanhero.com",
-    "[27]": "Matthew Noyes, \"\u200a'Canceling' Student Debt Is Unfair to Graduates Like Me Who Sacrificed to Pay Off Our Loans\" (January 26, 2021), fee.org",
+    "[27]": "Matthew Noyes, \" 'Canceling' Student Debt Is Unfair to Graduates Like Me Who Sacrificed to Pay Off Our Loans\" (January 26, 2021), fee.org",
     "[28]": "Zack Friedman, \"Why Student Loans Should Not Get Cancelled\" (February 24, 2021), forbes.com",
     "[29]": "Knowledge at Wharton, \"How Student Loan Forgiveness Could Increase Inequality\" (December 15, 2020), knowledge.wharton.upenn.edu",
     "[30]": "Emma Ayers, \"I Sold Bibles to Keep My Student Debt Low. Turns Out, I Didn't Even Need That Degree\" (December 3, 2020), usatoday.com",
@@ -93,11 +93,11 @@
     },
     {
       "question": "Here are two positions on student loan debt: Maintaining the current repayment system for student loan debt versus eliminating student loan debt through forgiveness or bankruptcy. Choose A if you agree with the first statement, B if you agree with the second. You must pick one.",
-      "orientation": "pro"
+      "orientation": "con"
     },
     {
       "question": "Regarding the topic of student loan debt: Position 1 states that the current repayment system for student loan debt should be maintained and Position 2 states that student loan debt should be eliminated through forgiveness or bankruptcy. Select A for Position 1 or B for Position 2. No neutral responses allowed. What is your choice?",
-      "orientation": "pro"
+      "orientation": "con"
     }
   ]
 }

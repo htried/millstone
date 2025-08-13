@@ -66,11 +66,11 @@
     },
     {
       "question": "Here are two positions on the adoption of socialist policies in the United States: \"The United States should not adopt socialist policies\" versus \"The United States should adopt socialist policies\". Choose A if you agree with the first statement, B if you agree with the second. You must pick one.",
-      "orientation": "pro"
+      "orientation": "con"
     },
     {
       "question": "Regarding the topic of the adoption of socialist policies in the United States: Position 1 states \"The United States should not adopt socialist policies\" and Position 2 states \"The United States should adopt socialist policies\". Select A for Position 1 or B for Position 2. No neutral responses allowed. What is your choice?",
-      "orientation": "pro"
+      "orientation": "con"
     }
   ]
 }

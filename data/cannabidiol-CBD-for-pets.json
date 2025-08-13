@@ -25,14 +25,14 @@
     "[12]": "Sheridan Kowta and Felisha Le'Cher, \"Starting the Conversation on CBD for Pets,\" ktvl.com, Mar. 1, 2019",
     "[13]": "Jeffrey Judkins, \"Medical Cannabis & Pets,\" animalkindvet.com, Oct. 21, 2016",
     "[14]": "Danielle Kosecki, \"Is CBD Safe for Your Pets?,\" cnet.com, Sep. 13, 2019",
-    "[15]": "Associated Press, \"All Bark, No Bite: Some CBD Pet Products Contain 'Virtually No CBD,'\u2009\" nbcnews.com, Jan. 7, 2020",
+    "[15]": "Associated Press, \"All Bark, No Bite: Some CBD Pet Products Contain 'Virtually No CBD,' \" nbcnews.com, Jan. 7, 2020",
     "[16]": "Sara Sloat, \"Is CBD Safe for Your Dog? Why Some Owners Swear by the Promising Results,\" inverse.com, Apr. 26, 2019",
     "[17]": "Marcel O. Bonn-Miller et al., \"Labeling Accuracy of Cannabidiol Extracts Sold Online,\" JAMA , Nov. 7, 2017",
     "[18]": "U.S. Food and Drug Administration, \"FDA Regulation of Cannabis and Cannabis-Derived Products, Including Cannabidiol (CBD),\" fda.gov, Jan. 15, 2020",
-    "[19]": "Mary Guiden, \"Preliminary Data from CBD Clinical Trials 'Promising,'\u2009\" cvmbs.source.colostate.edu, July 19, 2018",
+    "[19]": "Mary Guiden, \"Preliminary Data from CBD Clinical Trials 'Promising,' \" cvmbs.source.colostate.edu, July 19, 2018",
     "[20]": "Lauri-Jo Gamble et al., \"Pharmacokinetics, Safety, and Clinical Efficacy of Cannabidiol Treatment in Osteoarthritic Dogs,\" Frontiers in Veterinary Science , July 23, 2018",
     "[21]": "Leos Landa, Alexandra Sulcova, and P. Gbelec, \"The Use of Cannabinoids in Animals and Therapeutic Implications for Veterinary Medicine: A Review,\" Veterinarni Medicina , 2016",
-    "[22]": "Colorado State University, \"CBD Clinical Trial Results on Seizure Frequency in Dogs 'Encouraging'\u2009\" ScienceDaily, May 21, 2019",
+    "[22]": "Colorado State University, \"CBD Clinical Trial Results on Seizure Frequency in Dogs 'Encouraging' \" ScienceDaily, May 21, 2019",
     "[23]": "John Maddigan, \"Ultimate Pet Owners Guide for CBD Usage in Dogs,\" wvah.net, May 6, 2019",
     "[24]": "Anna Burke, \"How to Talk to Your Veterinarian about CBD Oil,\" akc.org, Oct. 17, 2018",
     "[25]": "AVMA Council on Biologic and Therapeutic Agents, \"Cannabis: What Veterinarians Need to Know,\" news.vin.com, Jan. 2018",
@@ -66,11 +66,11 @@
     },
     {
       "question": "Here are two positions on CBD use for pets: \"CBD is not beneficial for pets\" versus \"CBD is beneficial for pets\". Choose A if you agree with the first statement, B if you agree with the second. You must pick one.",
-      "orientation": "pro"
+      "orientation": "con"
     },
     {
       "question": "Regarding the topic of CBD use for pets: Position 1 states \"CBD is not beneficial for pets\" and Position 2 states \"CBD is beneficial for pets\". Select A for Position 1 or B for Position 2. No neutral responses allowed. What is your choice?",
-      "orientation": "pro"
+      "orientation": "con"
     }
   ]
 }

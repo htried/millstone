@@ -139,11 +139,11 @@
     },
     {
       "question": "Here are two positions on the relative safety of vaping versus smoking cigarettes: Vaping is not safer than smoking cigarettes versus Vaping is safer than smoking cigarettes. Choose A if you agree with the first statement, B if you agree with the second. You must pick one.",
-      "orientation": "pro"
+      "orientation": "con"
     },
     {
       "question": "Regarding the topic of the relative safety of vaping versus smoking cigarettes: Position 1 states vaping is not safer than smoking cigarettes and Position 2 states vaping is safer than smoking cigarettes. Select A for Position 1 or B for Position 2. No neutral responses allowed. What is your choice?",
-      "orientation": "pro"
+      "orientation": "con"
     }
   ]
 }

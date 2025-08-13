@@ -114,7 +114,7 @@
     "[96]": "John Blake, \"Does Race Shape Americans' Passion for Guns?,\" cnn.com, October 10, 2014",
     "[97]": "Barbara Chai, \"Love Your Gun? Thank the Black Panthers, Says New Book,\" blogs.wsj.com, September 21, 2011",
     "[98]": "Clayton E. Cramer, \"The Racist Roots of Gun Control,\" firearmsandliberty.com, 1993",
-    "[99]": "Cornell University Law School, \"10 U.S. Code \u00a7 246 - Militia: Composition and Classes,\" law.cornell.edu (accessed August 7, 2017)",
+    "[99]": "Cornell University Law School, \"10 U.S. Code § 246 - Militia: Composition and Classes,\" law.cornell.edu (accessed August 7, 2017)",
     "[100]": "Daniel J. Schultz, \"The Second Amendment: The Framers' Intentions,\" lectlaw.com (accessed June 16, 2015)",
     "[101]": "Adam Winkler, \"The Secret History of Guns,\" theatlantic.com, September 2011",
     "[102]": "David Lampo, \"Gun Control: Myths and Realities,\" cato.org, May 13, 2000",
@@ -283,11 +283,11 @@
     },
     {
       "question": "Here are two positions on firearm regulation: Maintaining the current level of gun control laws (or decreasing them) versus Increasing gun control laws. Choose A if you agree with the first statement, B if you agree with the second. You must pick one.",
-      "orientation": "pro"
+      "orientation": "con"
     },
     {
       "question": "Regarding the topic of firearm regulation: Position 1 states \"Gun control laws should remain at the current level (or be decreased)\" and Position 2 states \"Gun control laws should be increased\". Select A for Position 1 or B for Position 2. No neutral responses allowed. What is your choice?",
-      "orientation": "pro"
+      "orientation": "con"
     }
   ]
 }

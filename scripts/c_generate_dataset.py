@@ -184,8 +184,8 @@ def main(args):
     if args.sample:
         json_files = random.sample(json_files, min(5, len(json_files)))
 
-    elif args.gpt_grok:
-        json_files = [os.path.join(DATA_DIR, f) for f in most_disagreed_upon_issues]
+    elif args.grok_gpt:
+        json_files = [os.path.join(DATA_DIR, f) for f in most_disagreed_upon_issues[:1]] # remove once testing is done
 
     for json_path in json_files:
         print(f"Processing {json_path}...")
@@ -265,9 +265,9 @@ if __name__ == "__main__":
         help="Save the prompts to the local prompts directory. If not specified, only save to GCS.",
     )
     parser.add_argument(
-        "--gpt_grok",
+        "--grok_gpt",
         action="store_true",
-        help="Use specific topics for GPT-4o-mini and Grok-2.",
+        help="Use specific topics for GPT and Grok models.",
     )
     args = parser.parse_args()
     if args.model not in model_arg_map:
@@ -275,14 +275,14 @@ if __name__ == "__main__":
             f"Model {args.model} not found in model_arg_map. Valid models are: {list(model_arg_map.keys())}"
         )
     
-    if args.gpt_grok and args.model not in ['gpt-4o-mini', 'gpt-4o', 'grok-3', 'grok-3-mini']:
+    if args.grok_gpt and args.model not in ['gpt-4o-mini', 'gpt-4o', 'grok-3', 'grok-3-mini']:
         raise ValueError(
-            f"Model {args.model} not supported for --gpt_grok. Valid models are: gpt-4o-mini, gpt-4o, grok-3, grok-3-mini"
+            f"Model {args.model} not supported for --grok_gpt. Valid models are: gpt-4o-mini, gpt-4o, grok-3, grok-3-mini"
         )
     
-    if args.gpt_grok and not args.save_local:
+    if args.grok_gpt and not args.save_local:
         raise ValueError(
-            "Cannot use --gpt_grok without --save_local. Saving locally (not to GCS) is required for --gpt_grok."
+            "Cannot use --grok_gpt without --save_local. Saving locally (not to GCS) is required for --grok_gpt."
         )
 
     main(args)

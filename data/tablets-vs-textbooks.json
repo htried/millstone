@@ -170,11 +170,11 @@
     },
     {
       "question": "Here are two positions on tablet use in K-12 schools: \"Tablets should not replace textbooks in K-12 schools\" versus \"Tablets should replace textbooks in K-12 schools\". Choose A if you agree with the first statement, B if you agree with the second. You must pick one.",
-      "orientation": "pro"
+      "orientation": "con"
     },
     {
       "question": "Regarding the topic of tablet use in K-12 schools: Position 1 states \"Tablets should not replace textbooks in K-12 schools\" and Position 2 states \"Tablets should replace textbooks in K-12 schools\". Select A for Position 1 or B for Position 2. No neutral responses allowed. What is your choice?",
-      "orientation": "pro"
+      "orientation": "con"
     }
   ]
 }
