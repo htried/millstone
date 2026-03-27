@@ -118,11 +118,11 @@ uv run scripts/e_grok_gpt.py --model <model_name> [--estimate_tokens]
 
 ### 5. Parsing and Interpreting the Data
 
-Raw prediction jsonl files are in `predictions/` (Claude Opus 4 had some resource exhausted errors so we had to do it in two runs of roughly ~50k queries per run).
+Raw prediction jsonl files should be downloaded from HuggingFace into `predictions/`.
 
 QA-ing the data is done in **`notebooks/process_raw_data.ipynb`**, where LLM responses, evidence cases, and question framings are parsed in order to get stance counts in `{pro, con, other}`.
 
-Finally, we workshop and generate visualizations in **`notebooks/visualize.ipynb`**.
+Exploratory data analysis is in **`notebooks/visualize_exploratory.ipynb`**, and stistical analysis of output effects is conducted in **`scripts/g_calculate_statistics.py`**. Final paper figures about opinion shifts are generated in  **`notebooks/visualize_paper_figures.ipynb`**. Analysis of arguments (ordering and convincingness) is conducted in **`scripts/h_analyze_order_effects.py`** and **`notebooks/evidence_analysis.ipynb`**, respectively.
 
 ---
 
