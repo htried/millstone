@@ -1,0 +1,6 @@
+rank,even_weight_binary_flip,weighted_binary_flip_original
+1,claude-opus-4,claude-opus-4
+2,gemini-2.0-flash,gemini-2.0-flash
+3,llama-3.1-8b,llama-3.1-8b
+4,claude-3.5-haiku,claude-3.5-haiku
+5,llama-3.1-405b,llama-3.1-405b

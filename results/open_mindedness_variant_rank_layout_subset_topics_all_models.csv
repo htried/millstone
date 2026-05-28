@@ -1,0 +1,10 @@
+rank,even_weight_binary_flip,weighted_binary_flip_original
+1,grok-3,grok-3
+2,gpt-4o-mini,gpt-4o-mini
+3,gpt-4o,gpt-4o
+4,claude-opus-4,claude-opus-4
+5,gemini-2.0-flash,gemini-2.0-flash
+6,llama-3.1-8b,grok-3-mini
+7,claude-3.5-haiku,llama-3.1-8b
+8,llama-3.1-405b,claude-3.5-haiku
+9,grok-3-mini,llama-3.1-405b

@@ -1,0 +1,2 @@
+table,variant_a,variant_b,positions_compared,same_position_count,same_position_pct,matching_ranks,matching_models,other_variant
+subset_topics_all_models,even_weight_binary_flip,weighted_binary_flip_original,9,5,55.55555555555556,"1, 2, 3, 4, 5","grok-3, gpt-4o-mini, gpt-4o, claude-opus-4, gemini-2.0-flash",even_weight_binary_flip
