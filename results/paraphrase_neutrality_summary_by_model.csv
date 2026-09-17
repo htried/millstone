@@ -1,0 +1,9 @@
+judge_model,label,n,total,pct
+gemini-2.0-flash,leans_con,3,642,0.46728971962616817
+gemini-2.0-flash,leans_pro,4,642,0.6230529595015576
+gemini-2.0-flash,neutral,635,642,98.90965732087228
+gpt-4o,leans_con,3,642,0.46728971962616817
+gpt-4o,neutral,639,642,99.53271028037383
+grok-3,leans_con,1,642,0.1557632398753894
+grok-3,leans_pro,4,642,0.6230529595015576
+grok-3,neutral,637,642,99.22118380062305
